@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "logo": "url('/assets/bg.jpg')",
-        "horti": "url('/assets/hortifruti.jpg')"
+        "horti": "url('/assets/hortifruti.jpg')",
+        "carnes": "url('/assets/carnes.jpg')",
       },
     },
   },
