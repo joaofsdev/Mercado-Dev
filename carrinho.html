@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Mercado Dev-Carnes</title>
+</head>
+
+<body class="h-[100vh]">
+    <header class="text-white w-full h-[220px] md:h-[300px] bg-logo bg-cover bg-center">
+        <a href="index.html">
+            <div class="fixed p-2 text-2xl">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </a>
+        <div class="w-full h-full flex flex-col justify-center items-center bg-zinc-900/60">
+            <div class="w-full px-3 text-xl md:text-2xl">
+            </div>
+            <img src="./assets/logo.jpg" alt="Logo Mercado"
+                class="w-20 h-20 md:w-28 md:h-28 rounded-full hover:scale-110 duration-300" />
+
+            <div class=" w-full h-auto flex justify-center items-center p-3 text-center">
+                <h1 class="font-bold text-2xl md:text-3xl">Seu Carrinho <i class="fa-solid fa-cart-shopping"></i></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-col justify-center items-center gap-4">
+
+        <h1 class="font-bold text-xl py-2">Suas Compras</h1>
+
+        <div class="flex justify-evenly gap-2 flex-col" id="carrinho">
+            
+        </div>
+
+        <p class="font-bold fixed bottom-20 z-50">Total: <span id="preco-total">0.00</span> </p>
+
+    </div>
+
+    <footer
+        class="w-full h-16 md:h-20 py-2 fixed bottom-0 z-50 flex items-center justify-center text-center gap-2 bg-black/60">
+        <button class="text-center">
+            <span class="font-bold text-white bg-red-600 p-2 rounded-full" id="Cancelar Pedido">Cancelar Pedido</span>
+        </button>
+
+        <button class="text-center">
+            <span class="font-bold text-white bg-green-600 p-2 rounded-full" id="Cancelar Pedido">Ir para Pagamento</span>
+        </button>
+    </footer>
+</body>
+
+</html>

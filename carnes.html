@@ -14,34 +14,35 @@
 
 <body class="h-[100vh]">
     <!--Header-->
-    <header class="text-white w-full h-[240px] bg-carnes bg-cover bg-center">
-        <div class="w-full h-full flex flex-col justify-center items-center bg-zinc-900 bg-opacity-60">
-            <div class="w-full px-3 text-xl">
-                <a href="./index.html">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                </a>
+    <header class="text-white w-full h-[240px] md:h-[320px] bg-carnes bg-cover bg-center">
+        <a href="index.html">
+            <div class="fixed p-2 text-2xl">
+                <i class="fa-solid fa-circle-xmark"></i>
             </div>
+        </a>
+        <div class="w-full h-full flex flex-col justify-center items-center bg-zinc-900/60">
             <img src="./assets/logo.jpg" alt="Logo Mercado"
-                class="w-20 h-20 rounded-full hover:scale-110 duration-300" />
+                class="w-20 h-20 md:w-28 md:h-28 rounded-full hover:scale-110 duration-300" />
 
             <div class=" w-full h-auto flex flex-col justify-center items-center p-3">
-                <h1 class="font-bold text-2xl">Seção de Carnes</h1>
+                <h1 class="font-bold text-2xl md:text-3xl">Seção de Carnes</h1>
             </div>
 
             <div class="w-full h-auto flex justify-center items-center mt-0 mb-1">
-                <span class=" bg-green-600 rounded-xl font-medium px-2 py-1" id="horario">Carnes Premium</span>
+                <span class=" bg-green-600 rounded-xl font-medium px-2 py-1 md:text-lg" id="horario">Carnes
+                    Premium</span>
             </div>
         </div>
     </header>
     <!--Fim do Header-->
 
-    <h1 class="text-black font-medium text-xl text-center mt-5 mb-6">Escolha seus Produtos</h1>
+    <h1 class="text-black font-medium text-xl md:text-2xl text-center mt-5 mb-6">Escolha seus Produtos</h1>
 
-    <div id="menu-carnes">
+    <div class="flex justify-evenly items-center " id="menu-carnes">
 
-        <main class="grid grid-cols-1">
+        <main class="grid grid-cols-1 md:grid-cols-2 md:gap-2">
 
-            <div class="flex px-1">
+            <div class="flex px-1 md:max-w-[500px] md:max-h-[95px]">
 
                 <img src="./Assets/picanha.jpg" alt="Picanha"
                     class="w-24 h-24 rounded-2xl hover:scale-105 hover:-rotate-3 duration-300" />
@@ -49,7 +50,8 @@
                 <div class="px-1 mb-2">
 
                     <p class="font-bold">1KG de Picanha</p>
-                    <p class="text-sm font-medium">Suculenta, macia e cheia de sabor. Perfeita para churrascos e grelhados.</p>
+                    <p class="text-sm font-medium">Suculenta, macia, e cheia de sabor. Perfeita para churrascos. &nbsp;
+                    </p>
 
                     <div class="flex justify-between gap-2 items-center mt-2 font-bold">
                         <p>R$69,99 KG</p>
@@ -61,9 +63,9 @@
 
             </div>
 
-            <div class="flex px-1">
+            <div class="flex px-1 md:max-w-[500px] md:max-h-[95px]">
 
-                <img src="./Assets/maminha.jpg" alt="Picanha"
+                <img src="./Assets/maminha.jpg" alt="Maminha"
                     class="w-24 h-24 rounded-2xl hover:scale-105 hover:-rotate-3 duration-300" />
 
                 <div class="px-1 mb-2">
@@ -81,16 +83,57 @@
 
             </div>
 
+            <div class="flex px-1 md:max-w-[500px] md:max-h-[95px]">
+
+                <img src="./Assets/costela.webp" alt="Costela"
+                    class="w-24 h-24 rounded-2xl hover:scale-105 hover:-rotate-3 duration-300" />
+
+                <div class="px-1 mb-2">
+
+                    <p class="font-bold">1KG de Costela</p>
+                    <p class="text-sm font-medium">Macia, suculenta e saborosa. Ideal para assados e churrascos.</p>
+
+                    <div class="flex justify-between gap-2 items-center mt-2 font-bold">
+                        <p>R$59,99 KG</p>
+                        <button class="bg-zinc-900 px-3 rounded add-btn-carnes" data-name="Costela" data-price="59.99">
+                            <i class="fa-solid fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex px-1 md:max-w-[500px] md:max-h-[95px]">
+
+                <img src="./Assets/bife.jpg" alt="Bife"
+                    class="w-24 h-24 rounded-2xl hover:scale-105 hover:-rotate-3 duration-300" />
+
+                <div class="px-1 mb-2">
+
+                    <p class="font-bold">1KG de Bife</p>
+                    <p class="text-sm font-medium">Macia, suculenta e saborosa. Ideal para assados e churrascos.</p>
+
+                    <div class="flex justify-between gap-2 items-center mt-2 font-bold">
+                        <p>R$29,99 KG</p>
+                        <button class="bg-zinc-900 px-3 rounded add-btn-carnes" data-name="Bife" data-price="29.99">
+                            <i class="fa-solid fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
         </main>
 
     </div>
 
-    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-50 flex items-center justify-center">
-        <button class="flex items-center gap-2 text-white font-bold">
+    <footer class="w-full md:h-16 bg-red-500 py-2 fixed bottom-0 z-50 flex items-center justify-center text-center">
+        <a href="./carrinho.html"><button class="flex items-center gap-2 text-white font-bold">
             (<span id="quantidade_carrinho">0</span>)
-            Seu Carrinho
+            Meu Carrinho
             <i class="fa-solid fa-cart-shopping"></i>
         </button>
+    </a>
     </footer>
 </body>
 

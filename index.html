@@ -14,14 +14,14 @@
 <body class="h-[100vh]">
 
     <!--Header-->
-    <header class="w-full h-[300px] bg-logo bg-cover bg-center text-white">
+    <header class="w-full h-[300px] md:h-[320px] bg-logo bg-cover bg-center text-white">
         <div class="w-full h-full flex flex-col justify-center items-center bg-zinc-900 bg-opacity-60">
             <img src="./assets/logo.jpg" alt="Logo Mercado"
                 class="w-32 h-32 rounded-full hover:scale-110 duration-300" />
 
             <div class=" w-full h-auto flex flex-col justify-center items-center p-4">
-                <h1 class="font-bold text-2xl">Mercado Dev</h1>
-                <span class="font-medium text-sm">Rua Software, 322</span>
+                <h1 class="font-bold text-2xl md:text-3xl">Mercado Dev</h1>
+                <span class="font-medium text-sm md:text-base">Rua Software, 322</span>
             </div>
 
             <div class="w-full h-auto flex justify-center items-center mt-1 mb-1 text-white">
@@ -32,13 +32,14 @@
     </header>
     <!--Fim do Header-->
 
-    <h1 class="text-black font-medium text-xl text-center mt-5 mb-6">Escolha a Categoria do Produto</h1>
+    <h1 class="text-black font-medium text-xl text-center mt-5 mb-6 md:font-bold md:text-2xl">Escolha a Categoria do
+        Produto</h1>
 
     <!--Seções-->
 
-    <div id="menu">
+    <div class="md:flex md:justify-center md:items-center" id="menu">
 
-        <main class="grid grid-cols-2">
+        <main class="grid grid-cols-2 md:gap-[200px]">
 
             <div class="flex flex-col items-center justify-center mb-3">
 
@@ -67,12 +68,13 @@
     </div>
     <!--Fim das Seções-->
 
-    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-        <button class="flex items-center gap-2 text-white font-bold">
-            (<span id="quantidade_carrinho">0</span>)
-            Seu Carrinho
-            <i class="fa-solid fa-cart-shopping"></i>
-        </button>
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center md:h-20">
+        <a href="./carrinho.html"><button class="flex items-center gap-2 text-white font-bold">
+                (<span id="quantidade_carrinho">0</span>)
+                Meu Carrinho
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </a>
     </footer>
 </body>
 
